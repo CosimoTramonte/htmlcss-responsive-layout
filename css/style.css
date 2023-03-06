@@ -53,7 +53,7 @@ header .nav-desktop ul li{
     padding: 0 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 850px) {
 
     .container{
         width: 80%;
@@ -70,6 +70,29 @@ header .nav-desktop ul li{
 }
 
 /*MAIN*/
+
+.main-information .container .row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-information .container .row .col{
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .main-information .container .row .col{
+        width: 30%;
+    }
+    
+    .main-information .container .row .col:first-child{
+        width: 65%;
+    }
+}
+
+
 
 
 
