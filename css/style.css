@@ -26,6 +26,9 @@
 
 header{
     height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 header .container{
@@ -71,10 +74,14 @@ header .nav-desktop ul li{
 
 /*MAIN*/
 
+.main-information{
+    padding-top: 90px;
+}
+
 .main-information .container .row{
     flex-wrap: wrap;
-    justify-content: space-between;
 }
+
 .main-information .container .row .col{
     width: 100%;
     margin: 5px 0;
@@ -82,6 +89,10 @@ header .nav-desktop ul li{
 
 
 @media screen and (min-width: 480px) {
+
+    .main-information .container .row{
+        justify-content: space-between;
+    }
 
     .main-information .container .row .col{
         width: 30%;
@@ -92,8 +103,116 @@ header .nav-desktop ul li{
     }
 }
 
+.secondary-information{
+    background-color:#9792E4;
+}
 
+.secondary-information .container .row{
+    flex-wrap: wrap;
+}
 
+.secondary-information .container .row .col{
+    width: 100%;
+    margin: 10px 0;
+}
 
+@media screen and (min-width: 850px) {
+
+    .secondary-information .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .secondary-information .container .row{
+        justify-content: space-between;
+    }
+
+    .secondary-information .container .row .col{
+        width: 50%;
+    }
+}
+
+.testimonials .container .row{
+    flex-wrap: wrap;
+}
+
+.testimonials .container .row .col:first-child{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.testimonials .container .row .col:not(:first-child){
+    width: 100%;
+    margin: 10px 0;
+    background-color: #9792E4;
+}
+
+.benefits-working h2{
+    text-align: center;
+}
+
+.benefits-working .container .row{
+    flex-wrap: wrap;
+}
+
+.benefits-working .container .row .col{
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px){
+
+    .benefits-working .container .row{
+        justify-content: space-between;
+    }
+
+    .benefits-working .container .row .col{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 850px){
+
+    .benefits-working .container .row .col{
+        width: 30%;
+    }
+}
+
+.about-us .container .row{
+    flex-wrap: wrap;
+}
+
+.about-us .container .row .col{
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 480px){
+
+    .about-us .container .row{
+        justify-content: space-between;
+    }
+
+    .about-us .container .row .col{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 850px){
+
+    .about-us .container .row{
+        justify-content: space-between;
+    }
+
+    .about-us .container .row .col:first-child{
+        width: 60%;
+    }
+
+    .about-us .container .row .col:last-child{
+        width: 40%;
+    }
+}
 
 /*FOOTER*/
